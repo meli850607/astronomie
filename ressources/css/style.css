@@ -48,3 +48,8 @@ ul{
   list-style: none;
   font-size: 30px;
 }
+.formulaire{
+  border: 3px;
+  border-radius: 15px;
+  padding-bottom: 50px;
+}

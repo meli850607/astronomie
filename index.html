@@ -1,53 +1,105 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="ressources/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,400,400i,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-    <title>Astronomie</title>
-  </head>
-  <body>
-    <header class="header" id="top">
 
-      <nav class="navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-          <button type="button"class="navbar-toggle collapsed" data-toggle="collapse" data-target="#loso-navbar-collapse-1" aria-expanded="false">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="ressources/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,400,400i,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+  <title>Astronomie</title>
+</head>
+
+<body>
+  <header class="header" id="top">
+
+    <nav class="navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#loso-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
         </div class="collapse navbar-collapse" id="main_menu">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#home" class="nav-item">home</a></li>
-            <li><a href="#p" class="nav-item">info</a></li>
-            <li><a href="#home" class="nav-item">home</a></li>
-            <li><a href="#contact" class="nav-item">contact</a></li>
+        <ol class="nav navbar-nav navbar-right">
+          <li class="active"><a class="scroll-section" href="#home" class="nav-item">home</a></li>
+          <li><a class="scroll-section" href="#p" class="nav-item">info</a></li>
+          <li><a class="scroll-section" href="#home" class="nav-item">home</a></li>
+          <li><a class="scroll-section" href="#contact" class="nav-item">contact</a></li>
 
-          </ul>
-        </div>
-      </nav>
-      <div class="row">
-        <h1>Les quasars</h1>
+        </ol>
       </div>
-
-        <p>Les quasars sont des trous noir super massifs qui évacuent le surplus de matières par des jets de particules très puissants </p>
-
-    </header>
-<p id="p">Les galaxies possèdes toutes des trous noirs plus ou moins actif et plus ou moins gros, mais en leur centre ce trouve des trous noirs géants qui, suivant la quantités de matières peuvent être très actifs et deviennent dans ce cas des quasars.</p>
-  </body>
-
-  <footer class="footer" id="contact">
-    <div class="contact">
-    <ul>
-      <li class="facebook"><a href"#" target="_blank"><i class="ion-social-facebook" aria-hidden="true"></i></a></li>
-      <li class="twitter"><a href"#" target="_blank"><i class="ion-social-twitter" aria-hidden="true"></i></a></li>
-      <li class="email"><a href"#" target="_blank"><i class="ion-at" aria-hidden="true"></i></a></li>
-    </ul>
+    </nav>
+    <div class="row">
+      <h1>Les quasars</h1>
     </div>
-  </footer>
+
+    <p>Les quasars sont des trous noir super massifs qui évacuent le surplus de matières par des jets de particules très puissants </p>
+
+  </header>
+  <p id="p">Les galaxies possèdes toutes des trous noirs plus ou moins actif et plus ou moins gros, mais en leur centre ce trouve des trous noirs géants qui, suivant la quantités de matières peuvent être très actifs et deviennent dans ce cas des quasars.</p>
+  <form>
+    <!--debut contact-->
+    <section id="contact" class="formulaire">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 section-heade white text-center">
+            <h2>contact</h2>
+            <div class="space-25"></div>
+            <p>Pour plus d'informations,
+              <br>contactez-nous.</p>
+            <div class="space-50"></div>
+          </div>
+          <div class="col-md-12">
+            <form>
+              <div class="row">
+
+                <div class="form-group">
+                  <input class="form-control" type="text" id="yourname" placeholder="Entrez votre nom" required>
+
+                </div>
+
+                <div class="form-group">
+                  <input type="email" class="form-control" id="youremail" placeholder="Entrez votre Email" required>
+
+                </div>
+              </div>
+
+              <div class="row">
+
+                <div class="form-group">
+                  <input type="text" class="form-control" id="yoursubject" placeholder="Entrez votre sujet" required>
+
+                </div>
+              </div>
+              <div class="row">
+
+                <div class="form-group">
+                  <textarea class="form-control" id="yourmessage" rows="6" placeholder="Entrez votre message" required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-default center-block">Envoyer</button>
+
+    </section>
+    <!--fin contact-->
+    </form>
+</body>
+
+<footer class="footer" id="contact">
+  <section>
+    <div class="contact">
+      <ul>
+        <li class="facebook"><a href "#" target="_blank"><i class="ion-social-facebook" aria-hidden="true"></i></a></li>
+        <li class="twitter"><a href "#" target="_blank"><i class="ion-social-twitter" aria-hidden="true"></i></a></li>
+        <li class="email"><a href "#" target="_blank"><i class="ion-at" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </section>
+</footer>
+
 </html>
