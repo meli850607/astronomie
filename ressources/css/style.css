@@ -25,18 +25,17 @@ h1 {
   margin-bottom: 100px;
 }
 
-h3 {
+p {
+  color: orange;
   text-align: center;
 }
 
-header {
-  background-image: url(ressources/img/nebuleuseducrabe.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+body {
+  background-image: url(https://fr.cdn.v5.futura-sciences.com/buildsv6/images/wide1920/3/5/e/35effc542d_94116_01-intro-856.jpg);
   background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-color: rgba(31, 31, 31, 0.75);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+
 
 }
