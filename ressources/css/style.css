@@ -30,12 +30,21 @@ p {
   text-align: center;
 }
 
-body {
-  background-image: url(https://fr.cdn.v5.futura-sciences.com/buildsv6/images/wide1920/3/5/e/35effc542d_94116_01-intro-856.jpg);
+header {
+  background-image: linear-gradient(rgba(30, 30, 30, 0.7), rgba(0, 0, 0, 0.7)), url(https://fr.cdn.v5.futura-sciences.com/buildsv6/images/wide1920/3/5/e/35effc542d_94116_01-intro-856.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
-
-
+  background-position: center;
+  height: 100vh;
+  margin-bottom: 50px;
+}
+footer{
+  background-color: grey;
+  width: 100%;
+  height: auto;
+}
+ul{
+  list-style: none;
+  font-size: 30px;
 }
