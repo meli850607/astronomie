@@ -91,7 +91,32 @@ ul {
 }
 
 .formulaire {
-  border: 3px;
-  border-radius: 15px;
+  background-image: linear-gradient(rgba(30, 30, 30, 0.7), rgba(0, 0, 0, 0.7)), url(https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/cf3ed8c2-e607-4dd5-9bb5-77c30328b691/738_000_m4991.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
   padding-bottom: 50px;
+  padding-top: 50px;
+}
+.col-md-12{
+  color: black;
+  text-transform: capitalize;
+}
+.form-control{
+  background-color: transparent;
+  border-color: black;
+  border-radius: 10px;
+}
+.btn-default{
+  background-color: transparent;
+  color: black;
+  text-transform: uppercase;
+  border-color: black;
+  border-radius: 10px;
+}
+.btn-default:hover{
+  transition: 1s;
+  background-color: #f6aa0fb3;
+  border-color: #f6aa0fb3;
 }
