@@ -1,14 +1,9 @@
 html {
   font-family: ‘Lato’, ‘Arial’, sans-serif;
-  /* police de caractère */
   font-weight: 300;
-  /* épaisseur de la police */
   font-size: 20px;
-  /* taille de la police */
   color: black;
-  /* couleur de la police */
   text-rendering: optimizeLegibility;
-  /*  /// Voir PDF */
   text-align: left;
 }
 
@@ -115,7 +110,7 @@ header {
   transform: scale(1);
   transition: transform 2s, opacity 2s;
   margin-left: 200px;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
   margin-top: 100px;
 }
 
@@ -123,6 +118,10 @@ header {
   opacity: 1;
   transition: 2s;
   transform: scale(0.8);
+}
+.images p{
+  margin-right: 60px;
+  font-size: 20px;
 }
 
 footer {
