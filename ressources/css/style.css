@@ -13,7 +13,7 @@ html {
 }
 
 .row {
-  width: 1140px;
+  width: 1200px;
   margin-left: 20px;
 }
 
@@ -50,9 +50,11 @@ p {
   text-align: center;
   margin-bottom: 50px;
 }
-.présentation{
+
+.présentation {
   color: orange;
 }
+
 header {
   background-image: linear-gradient(rgba(30, 30, 30, 0.7), rgba(0, 0, 0, 0.7)), url(https://fr.cdn.v5.futura-sciences.com/buildsv6/images/wide1920/3/5/e/35effc542d_94116_01-intro-856.jpg);
   background-size: cover;
@@ -63,36 +65,6 @@ header {
   margin-bottom: 50px;
 }
 
-.images li img {
-  overflow: hidden;
-  opacity: 0.5;
-  width: 100%;
-  height: auto;
-  margin-bottom: 100px;
-  margin-top: 100px;
-  border-radius: 20px;
-  background-color: black;
-  transform: scale(1);
-  transition: transform 2s, opacity 2s;
-}
-
-.images li img:hover {
-  opacity: 1;
-  transition: 2s;
-  transform: scale(0.5);
-}
-
-footer {
-  background-color: grey;
-  width: 100%;
-  height: auto;
-}
-
-ul {
-  list-style: none;
-  font-size: 30px;
-}
-
 .formulaire {
   background-image: linear-gradient(rgba(30, 30, 30, 0.7), rgba(0, 0, 0, 0.7)), url(https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/cf3ed8c2-e607-4dd5-9bb5-77c30328b691/738_000_m4991.jpg);
   background-repeat: no-repeat;
@@ -101,28 +73,83 @@ ul {
   background-attachment: fixed;
   padding-bottom: 50px;
   padding-top: 50px;
+  height: 100vh;
 }
-.col-md-12{
+
+.col-md-12 {
+  margin-top: 60px;
   color: black;
   text-transform: capitalize;
 }
-.form-control{
+
+.form-control {
   background-color: transparent;
   border-color: black;
   border-radius: 10px;
 }
-.btn-default{
+
+.btn-default {
   background-color: transparent;
   color: black;
   text-transform: uppercase;
   border-color: black;
   border-radius: 10px;
 }
-.btn-default:hover{
+
+.btn-default:hover {
   transition: 1s;
   background-color: #f6aa0fb3;
   border-color: #f6aa0fb3;
 }
-.form{
-  color:orange;
+
+.form {
+  color: orange;
+}
+
+.images img {
+  opacity: 0.5;
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+  background-color: black;
+  transform: scale(1);
+  transition: transform 2s, opacity 2s;
+  margin-left: 200px;
+  margin-bottom: 200px;
+  margin-top: 100px;
+}
+
+.images img:hover {
+  opacity: 1;
+  transition: 2s;
+  transform: scale(0.8);
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  text-align: center;
+  background-color: black;
+}
+
+ul {
+  list-style: none;
+  font-size: 30px;
+}
+div li a i{
+  color: #f6aa0fb3;
+  font-size: 20px;
+  position: relative;
+
+}
+.icon i{
+  display: inline-block;
+  margin-right: 15px;
+  text-align: center;
+
+}
+.icon a{
+  font-size: 20px;
+  color: #129CF3;
 }
