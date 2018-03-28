@@ -46,7 +46,7 @@ h1 {
 p {
   color: black;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .présentation {
@@ -134,7 +134,13 @@ footer {
   text-align: center;
   background-color: black;
 }
-
+ol{
+  color: black;
+  text-align: left;
+  position: relative;
+  margin-bottom: 50px;
+  margin-left: 300px;
+}
 ul {
   list-style: none;
   font-size: 30px;
