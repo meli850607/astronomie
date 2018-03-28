@@ -40,13 +40,13 @@
         <h1>Les quasars</h1>
       </div>
 
-      <p class="présentation">Les quasars sont des trous noir super massifs qui évacuent le surplus de matières par des jets de particules très puissants </p>
+      <p class="présentation">Les quasars sont des trous noir supermassifs qui évacuent le surplus de matières par des jets de particules très puissants </p>
 
     </header>
 
   <div>
     <p id="p">
-      Les galaxies possèdes toutes des trous noirs plus ou moins actifs et plus ou moins gros, mais en leur centre ce trouve des trous noirs super massifs qui, suivant la quantités de matières peuvent être très actifs et deviennent dans ce cas des quasars.</p>
+      Les galaxies possèdes toutes des trous noirs plus ou moins actifs et plus ou moins gros, mais en leur centre ce trouve des trous noirs supermassifs qui, suivant la quantités de matières peuvent être très actifs et deviennent dans ce cas des quasars.</p>
   </div>
   <form>
     <!--debut contact-->
@@ -114,6 +114,18 @@
               </div>
             </section>
           </footer>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+          <script>
+	         $(document).ready(function() {
+		           $('.scroll-section').on('click', function() { // Au clic sur un élément
+			              var page = $(this).attr('href'); // Page cible
+			                 var speed = 750; // Durée de l'animation (en ms)
+			                    $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			                       return false;
+		                         });
+	                          });
+          </script>
+
           <script src="vendors/js/jquery.waypoints.min.js"></script>
     </body>
 
