@@ -11,10 +11,12 @@ html {
   width: 1200px;
   margin-left: 20px;
 }
-img{
+
+img {
   width: 50px;
   height: auto;
 }
+
 .sticky {
   background-color: grey;
   opacity: 0.5;
@@ -122,7 +124,8 @@ header {
   transition: 2s;
   transform: scale(0.8);
 }
-.images p{
+
+.images p {
   margin-right: 60px;
   font-size: 20px;
   margin-bottom: 60px;
@@ -135,69 +138,59 @@ footer {
   text-align: center;
   background-color: black;
 }
-ol{
+
+ol {
   color: black;
   text-align: left;
   position: relative;
   margin-bottom: 50px;
   margin-left: 300px;
 }
+
 ul {
   list-style: none;
   font-size: 30px;
 }
-div li a i{
+
+div li a i {
   color: #ed8194;
   font-size: 20px;
   position: relative;
-
 }
-.icon i{
+
+.icon i {
   display: inline-block;
   margin-right: 15px;
   text-align: center;
-
 }
-.icon a{
+
+.icon a {
   font-size: 20px;
   color: #129CF3;
 }
+
 /*-------------bouton retour top----------*/
 
 #myBtn {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Fixed/sticky position */
   bottom: 20px;
-  /* Place the button at the bottom of the page */
   right: 30px;
-  /* Place the button 30px from the right */
   z-index: 99;
-  /* Make sure it does not overlap */
   border: 10px;
-  /* Remove borders */
   outline: none;
-  /* Remove outline */
   background-color: white;
-  /* Set a background color */
   color: black;
-  /* Text color */
   cursor: pointer;
-  /* Add a mouse pointer on hover */
   padding: 15px;
-  /* Some padding */
   border-radius: 10px;
-  /* Rounded corners */
   font-size: 18px;
-  /* Increase font size */
   border-color: black;
 }
 
 #myBtn:hover {
   background-color: grey;
   transition: 1s;
-  /* Add a dark-grey background on hover */
 }
 
 /*-------------fin bouton retour top---------------*/
