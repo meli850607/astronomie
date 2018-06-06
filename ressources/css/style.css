@@ -8,7 +8,7 @@ html {
 }
 
 .row {
-  width: 1200px;
+  width: 1140px;
   margin-left: 20px;
 }
 
@@ -46,10 +46,15 @@ h1 {
 }
 
 p {
-  color: black;
+  color: #ccc;
   text-align: center;
   margin-bottom: 20px;
   margin-top: 100px;
+}
+
+.info{
+  margin-left: 400px;
+
 }
 
 .présentation {
@@ -133,6 +138,10 @@ header {
   margin-bottom: 60px;
 }
 
+#p{
+  background-color: #3d3d3d;
+}
+
 footer {
   width: 100%;
   height: auto;
@@ -142,11 +151,11 @@ footer {
 }
 
 ol {
-  color: black;
+  color: #ccc;
   text-align: left;
   position: relative;
   margin-bottom: 50px;
-  margin-left: 300px;
+  margin-left: 100px;
   margin-bottom: 100px;
 }
 
