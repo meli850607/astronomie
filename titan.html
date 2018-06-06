@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400,400i,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="icon" type="image/png" href="ressources/img/galileoscope_logo.jpg">
+    <link rel="stylesheet" href="ressources/css/titan.css">
+    <title>Titan</title>
+  </head>
+  <body>
+    <header class="header" id="top">
+      <nav class="sticky">
+        <div class="container">
+          <img src="http://www.univers-astronomie.fr/generateur-soiree/astrogenerator/logo-astrogenerator.png" />
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#loso-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+          </div class="collapse navbar-collapse" id="main_menu">
+          <ol class="nav navbar-nav navbar-right">
+            <li class="active"><a class="scroll-section" href="index.html" class="nav-item">home</a></li>
+            <li><a class="scroll-section" href="#p" class="nav-item">info</a></li>
+            <li><a class="scroll-section" href="#reseauxsociaux" class="nav-item">réseaux sociaux</a></li>
+            <li><a class="scroll-section" href="encelade.html" class="nav-item">encelade</a></li>
+            <li><a class="scroll-section" href="titan.html" class="nav-item">titan</a></li>
+          </ol>
+        </div>
+      </nav>
+      <div class="row">
+        <h1>Titan</h1>
+      </div>
+      <p class="présentation"><strong>Titan, l'une des lunes de Saturne, est très intéressante. En effet, cette lune est entièrement recouverte de méthane liquide.</strong></p>
+    </header>
+
+      <section id="p">
+        <p>Titan, lune de Saturne surtout connue pour sa géologie particulière et la couleur jaune que sont atmosphère réflèchie.</br>
+        En effet, Titan ressemble beaucoup à la terre géoloiquement parlant, à quelques différences près.</br> A l'inverse de la terre qui recouverte de lacs, de rivères et d'océans d'eaux, Titan est recouverte de méthane liquide.</br>
+        Sur Titan il pleut, mais pas de l'eau, il pleut du méthane liquide.</br> Sont atmosphère est très dense, tellement dense qu'elle ne laisse pas voir le sol à partir de l'orbite.</br>
+        Titan est une lune somptueuse qui suscite beaucoup d'intéret au près des chercheurs. </p>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="images">
+  <div class="row">
+    <div class="col-md-4">
+      <img class="photos" src="http://planet-terre.ens-lyon.fr/planetterre/objets/Images/satellites-saturne-avril-2008/saturne-titan-01.jpg" alt="img">
+    </div>
+    <div class="col-md-4">
+      <img class="photos" src="http://danielmarin.naukas.com/files/2013/10/PIA17470.jpg" alt="img" />
+    </div>
+    <div class="col-md-4">
+      <img class="photos" src="https://static.le-systeme-solaire.net/ressources/syssol/titancas.jpg" alt="img">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+      <footer id="reseauxsociaux">
+        <section>
+          <div class="icon">
+            <ul>
+              <li class="facebook"><a href "#" target="_blank"><i class="ion-social-facebook" aria-hidden="true"></i>facebook</a></li>
+              <li class="twitter"><a href "#" target="_blank"><i class="ion-social-twitter" aria-hidden="true"></i>twitter</a></li>
+              <li class="email"><a href "#" target="_blank"><i class="ion-at" aria-hidden="true"></i>email</a></li>
+            </ul>
+          </div>
+        </section>
+      </footer>
+    <!--bouton retour top-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="ion-eject"></i></button>
+    <!--bouton retour top-->
+    <!--script retour top-->
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+        } else {
+          document.getElementById("myBtn").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+
+    <!-- fin script retour top-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.scroll-section').on('click', function() { // Au clic sur un élément
+          var page = $(this).attr('href'); // Page cible
+          var speed = 750; // Durée de l'animation (en ms)
+          $('html, body').animate({
+            scrollTop: $(page).offset().top
+          }, speed); // Go
+          return false;
+        });
+      });
+    </script>
+
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+  </body>
+</html>

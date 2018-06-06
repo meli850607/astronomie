@@ -29,6 +29,7 @@
           <li><a class="scroll-section" href="#contact" class="nav-item">contact</a></li>
           <li><a class="scroll-section" href="#reseauxsociaux" class="nav-item">réseaux sociaux</a></li>
           <li><a class="scroll-section" href="encelade.html" class="nav-item">encelade</a></li>
+          <li><a class="scroll-section" href="titan.html" class="nav-item">titan</a></li>
         </ol>
       </div>
     </nav>
@@ -97,59 +98,59 @@
                 </div>
               </div>
               <button type="submit" class="btn btn-default center-block">Envoyer</button>
-    </section>
-    <!--fin contact-->
-    </form>
-    <footer id="reseauxsociaux">
-      <section>
-        <div class="icon">
-          <ul>
-            <li class="facebook"><a href "#" target="_blank"><i class="ion-social-facebook" aria-hidden="true"></i>facebook</a></li>
-            <li class="twitter"><a href "#" target="_blank"><i class="ion-social-twitter" aria-hidden="true"></i>twitter</a></li>
-            <li class="email"><a href "#" target="_blank"><i class="ion-at" aria-hidden="true"></i>email</a></li>
-          </ul>
-        </div>
-      </section>
-    </footer>
-    <!--bouton retour top-->
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="ion-eject"></i></button>
-    <!--bouton retour top-->
-    <!--script retour top-->
-    <script>
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {
-        scrollFunction()
-      };
+            </section>
+            <!--fin contact-->
+            </form>
+            <footer id="reseauxsociaux">
+              <section>
+                <div class="icon">
+                  <ul>
+                    <li class="facebook"><a href "#" target="_blank"><i class="ion-social-facebook" aria-hidden="true"></i>facebook</a></li>
+                    <li class="twitter"><a href "#" target="_blank"><i class="ion-social-twitter" aria-hidden="true"></i>twitter</a></li>
+                    <li class="email"><a href "#" target="_blank"><i class="ion-at" aria-hidden="true"></i>email</a></li>
+                  </ul>
+                </div>
+              </section>
+            </footer>
+            <!--bouton retour top-->
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="ion-eject"></i></button>
+            <!--bouton retour top-->
+        <!--script retour top-->
+        <script>
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function() {
+            scrollFunction()
+          };
 
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.getElementById("myBtn").style.display = "block";
-        } else {
-          document.getElementById("myBtn").style.display = "none";
-        }
-      }
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("myBtn").style.display = "block";
+            } else {
+              document.getElementById("myBtn").style.display = "none";
+            }
+          }
 
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-      }
-    </script>
-    <!-- fin script retour top-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        $('.scroll-section').on('click', function() { // Au clic sur un élément
-          var page = $(this).attr('href'); // Page cible
-          var speed = 750; // Durée de l'animation (en ms)
-          $('html, body').animate({
-            scrollTop: $(page).offset().top
-          }, speed); // Go
-          return false;
-        });
-      });
-    </script>
-    <script src="vendors/js/jquery.waypoints.min.js"></script>
-</body>
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+          }
+        </script>
+        <!-- fin script retour top-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+          $(document).ready(function() {
+            $('.scroll-section').on('click', function() { // Au clic sur un élément
+              var page = $(this).attr('href'); // Page cible
+              var speed = 750; // Durée de l'animation (en ms)
+              $('html, body').animate({
+                scrollTop: $(page).offset().top
+              }, speed); // Go
+              return false;
+            });
+          });
+        </script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+  </body>
 
 </html>
