@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400,400i,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="icon" type="image/png" href="ressources/img/galileoscope_logo.jpg">
+    <link rel="stylesheet" href="ressources/css/europe.css">
+    <title>Europe</title>
+  </head>
+  <body>
+    <header class="header" id="top">
+      <nav class="sticky">
+        <div class="container">
+          <img src="http://www.univers-astronomie.fr/generateur-soiree/astrogenerator/logo-astrogenerator.png" />
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#loso-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+          </div class="collapse navbar-collapse" id="main_menu">
+          <ol class="nav navbar-nav navbar-right">
+            <li class="active"><a class="scroll-section" href="index.html" class="nav-item">home</a></li>
+            <li><a class="scroll-section" href="#p" class="nav-item">info</a></li>
+            <li><a class="scroll-section" href="#reseauxsociaux" class="nav-item">réseaux sociaux</a></li>
+            <li><a class="scroll-section" href="encelade.html" class="nav-item">encelade</a></li>
+            <li><a class="scroll-section" href="titan.html" class="nav-item">titan</a></li>
+            <li><a class="scroll-section" href="europe.html" class="nav-item">europe</a></li>
+          </ol>
+        </div>
+      </nav>
+      <div class="row">
+        <h1>Europe</h1>
+      </div>
+      <p class="présentation"><strong>Europe, une lune de Jupiter, à peut-être un océan sous sa croute de glace ce qui la rend très intéressante.</strong></p>
+    </header>
+    <section id="p">
+      <p>Europe, officiellement Jupiter II Europe (en abrégé J II Europe, internationalement J II Europa) est un satellite naturel de Jupiter, le sixième par la distance et le deuxième parmi les satellites galiléens.<br />
+Avec un diamètre de 3 121 kilomètres, Europe est le quatrième plus gros satellite de Jupiter et le sixième du système solaire. <br />Sa surface est composée de glace et se trouve être la plus lisse de tout le système solaire. <br />Bien que sa température soit au maximum de −150 °C, on suppose qu'en dessous se trouve un océan liquide d'environ 90 kilomètres de profondeur. De plus, des geysers d'eau ont été détectés à sa surface.<br /> Ces éléments laissent à penser qu'Europe pourrait être habitable par certains organismes, bien que cette hypothèse ne soit pas encore vérifiée.</p>
+    </section>
+    <section id="images">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="photos" src="" alt="img"/>
+        </div>
+        <div class="col-md-4">
+          <img class="photos" src="" alt="img" />
+        </div>
+        <div class="col-md-4">
+          <img class="photos" src="" alt="img"/>
+        </div>
+      </div>
+    </section>
+    <footer id="reseauxsociaux">
+      <section>
+        <div class="icon">
+          <ul>
+            <li class="facebook"><a href "#" target="_blank"><i class="ion-social-facebook" aria-hidden="true"></i>facebook</a></li>
+            <li class="twitter"><a href "#" target="_blank"><i class="ion-social-twitter" aria-hidden="true"></i>twitter</a></li>
+            <li class="email"><a href "#" target="_blank"><i class="ion-at" aria-hidden="true"></i>email</a></li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+  <!--bouton retour top-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="ion-eject"></i></button>
+  <!--bouton retour top-->
+  <!--script retour top-->
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+
+  <!-- fin script retour top-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.scroll-section').on('click', function() { // Au clic sur un élément
+        var page = $(this).attr('href'); // Page cible
+        var speed = 750; // Durée de l'animation (en ms)
+        $('html, body').animate({
+          scrollTop: $(page).offset().top
+        }, speed); // Go
+        return false;
+      });
+    });
+  </script>
+
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  </body>
+</html>
