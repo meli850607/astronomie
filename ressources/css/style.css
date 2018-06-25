@@ -90,22 +90,23 @@ header {
 
 .form-control {
   background-color: transparent;
-  border-color: black;
+  border-color: #fff;
   border-radius: 10px;
 }
 
 .btn-default {
   background-color: transparent;
-  color: black;
+  color: #fff;
   text-transform: uppercase;
-  border-color: black;
+  border-color: #fff;
   border-radius: 10px;
+  transition: 1s;
 }
 
 .btn-default:hover {
-  transition: 1s;
   background-color: #f6aa0fb3;
   border-color: #f6aa0fb3;
+  color: #000;
 }
 
 .form {
